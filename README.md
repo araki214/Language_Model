@@ -1,6 +1,7 @@
 # Language_Model
-アルバイトの一環で実装したLSTM（GRU）言語モデルです。kanohkさんのプログラム（https://github.com/kanoh-k/WikiNLP/blob/master/rnnlm.ipynb)を基に構築させていただきました。
-数字などの特殊文字は事前に除外した言語モデルの構築、およびパープレキシティの評価をpytorchで実装しました。
+アルバイトの一環で実装したLSTM（GRU）言語モデルです。
+kanohkさんのプログラム（https://github.com/kanoh-k/WikiNLP/blob/master/rnnlm.ipynb)を基に構築させていただきました。
+JIS X0208規格外の文字や、数字などの特殊文字を事前に除外した言語モデルを構築、およびそのパープレキシティの評価をpytorchで実装しました。
 70~72行の'self.corpus_files','self.valid_files','self.test_files'に学習、開発、テストデータの各パスを入れることでモデルを走らせることが出来ます。
 モデルの各種パラメータの初期値は以下の通りです。
 ・Embeddingの次元数：200次元
